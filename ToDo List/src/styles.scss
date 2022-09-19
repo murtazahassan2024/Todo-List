@@ -1,5 +1,18 @@
-@import "~bootstrap/scss/bootstrap";
+@use "./assets/styles/colors.scss";
+.header {
+  display: flex;
+  justify-content: center;
+}
 
-.done {
-  text-decoration: line-through;
+body {
+  background: #141414 url(https://unsplash.it/1228/880?image=302);
+  background-size: cover;
+  background-position: 60%;
+  height: 100%;
+}
+
+svg {
+  margin-top: 20px;
+  margin-bottom: -100px;
+  left: 0%;
 }
