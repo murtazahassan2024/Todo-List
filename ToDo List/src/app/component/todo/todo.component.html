@@ -1,5 +1,4 @@
 <!-- <h1>Todo List</h1> -->
-
 <svg
   version="1.1"
   xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +64,10 @@
   <ng-template pTemplate="header">
     <tr *ngFor="let todo of todos; let i = index">
       <th style="width: 2px">{{ i + 1 }}</th>
-      <td class="{{ !todo.isCompleted ? 'done' : '' }}" (click)="done(i)">{{ todo.name }}</td>
-      <td id="x" (click)="remove(i)">X</td>
+      <td style="width: 20px" class="{{ !todo.isCompleted ? 'done' : '' }}" (click)="done(i)">{{ todo.name }}</td>
+      <td class="delete" title="delete todo" (click)="delete(todo)">
+        <button pButton type="button" label="Delete" class="p-button-danger"></button>
+      </td>
     </tr>
   </ng-template>
 </p-table>

@@ -1,6 +1,7 @@
 import { TodoService } from './../../todo.service';
 import { Component, OnInit } from '@angular/core';
 import { Todo } from '../../models/Todo';
+import { Observable, tap, catchError } from 'rxjs';
 
 @Component({
   selector: 'app-todo',
@@ -37,5 +38,10 @@ export class TodoComponent implements OnInit {
     this.todoService.addTodo({ name } as Todo).subscribe((todo: Todo) => {
       this.todos.push(todo);
     });
+  }
+
+  delete(todo: Todo): void {
+    this.todos = this.todos.filter((v) => v !== todo);
+    this.todoService.deleteTodo(todo.id).subscribe();
   }
 }
