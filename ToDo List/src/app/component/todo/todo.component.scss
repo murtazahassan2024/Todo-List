@@ -1,0 +1,34 @@
+h1 {
+  position: relative;
+  text-align: realitive;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.id {
+  width: 1rem;
+  border: none !important;
+  background: none !important;
+}
+
+.todo-name {
+  text-align: center;
+  width: 83%;
+}

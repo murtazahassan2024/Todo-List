@@ -44,4 +44,13 @@ export class TodoComponent implements OnInit {
     this.todos = this.todos.filter((v) => v !== todo);
     this.todoService.deleteTodo(todo.id).subscribe();
   }
+
+  edit(todo: Todo) {
+    let title = todo.name;
+    let result = prompt('Edit Todo', title);
+    if (result !== null) {
+      todo.name = result;
+    }
+    this.todoService.updateTodo(todo).subscribe();
+  }
 }

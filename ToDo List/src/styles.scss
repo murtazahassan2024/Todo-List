@@ -1,18 +1,51 @@
 @use "./assets/styles/colors.scss";
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+}
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 10rem;
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+  padding-bottom: 13px;
+}
+h1:before {
+  background-color: #c50000;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 75px;
+  margin-bottom: 2px;
+}
+h1:after {
+  background-color: #c50000;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  width: 75px;
+  margin-bottom: -0.2em;
 }
 
-body {
-  background: #141414 url(https://unsplash.it/1228/880?image=302);
-  background-size: cover;
-  background-position: 60%;
-  height: 100%;
+h1 {
+  text-align: center;
 }
+// body {
+//   background: #141414 url(https://unsplash.it/1228/880?image=302);
+//   background-size: cover;
+//   background-position: 60%;
+//   height: 100%;
+// }
 
-svg {
-  margin-top: 20px;
-  margin-bottom: -100px;
-  left: 0%;
-}
+// svg {
+//   margin-top: 20px;
+//   margin-bottom: -100px;
+//   left: 0%;
+// }

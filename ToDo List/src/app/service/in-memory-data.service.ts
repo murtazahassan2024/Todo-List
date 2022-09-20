@@ -8,12 +8,12 @@ import { Todo } from '../models/Todo';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const todos = [
-      { name: 'Grocery', id: 9, isCompleted: true },
-      { name: 'Planting', id: 7, isCompleted: false },
-      { name: 'Swimming', id: 5, isCompleted: false },
-      { name: 'Cleaning', id: 3, isCompleted: true },
-      { name: 'Work', id: 1, isCompleted: true },
-      { name: 'Shower', id: 4, isCompleted: false },
+      { name: 'Grocery', id: 1, isCompleted: true },
+      { name: 'Planting', id: 2, isCompleted: false },
+      { name: 'Swimming', id: 3, isCompleted: false },
+      { name: 'Cleaning', id: 4, isCompleted: true },
+      { name: 'Work', id: 5, isCompleted: true },
+      { name: 'Shower', id: 6, isCompleted: false },
     ];
     return { todos };
   }
